@@ -1,0 +1,2 @@
+vou pegar todas essas frutas e juntas para uma grande salada de frutas
+IXIcat frutas.txt  ESQUECI DE COLOCAR >>, ACABOU SOBREPONDO TODO O ARQUIVO

@@ -1,0 +1,40 @@
+//1. Liste todos os processos;//
+1  ps
+
+//2. Agora use o comando sleep 30 & ;//
+2  sleep 30 &
+
+//3. Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução //
+3  ps
+4  bg %1
+
+//4. Execute novamente o comando sleep 30 , mas agora sem o & . Depois, faça com que ele continue executando em background;//
+5  sleep 30
+6  ^z
+7  bg %1
+
+//5. Crie um processo em background que rode o comando sleep por 300 segundos.//
+8  sleep 300 &
+
+//6. Crie mais dois processos que rodem o comando sleep por 200 e 100 segundos, respectivamente.//
+9  sleep 200
+10 ^z
+11 sleep 100
+12 ^z
+
+//7. Verifique que apenas o processo sleep 300 está em execução com o comando jobs . Suspenda a execução desse processo.//
+13 jobs
+14 fg %2
+15 ^z
+
+//8.Retome a execução do processo sleep 100 em background com o comando bg .//
+16 jobs
+17 bg %4
+
+//9. Termine a execução de todos os processos sleep //
+18 jobs
+19 kill %2
+20 kill %3
+21 kill %4
+22 jobs
+23 history

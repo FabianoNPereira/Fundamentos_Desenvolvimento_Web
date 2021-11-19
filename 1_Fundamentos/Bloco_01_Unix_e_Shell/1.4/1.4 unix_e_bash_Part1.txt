@@ -1,0 +1,37 @@
+//1. Navegue até a pasta unix_tests ; //
+1  cd Documentos/Trybe/trybe_exercicios/1_Fundamentos/Bloco_01_Unix_e_Shell/unix_tests/
+
+//2. Crie um arquivo texto pelo terminal com o nome skills2.txt e adicione os valores Internet , Unix e Bash , um em cada linha. //
+2  cat > skills2.txt
+
+//3. Adicione mais 5 itens à sua lista de skills e depois imprima a lista ordenada no terminal. 🤓//
+3  cat >> skills2.txt
+4  sort skills2.txt
+
+//4. Conte quantas linhas tem o arquivo skills2.txt .//
+5  wc -l skills2.txt
+
+//5. Crie um arquivo chamado top_skills.txt usando o skills2.txt , contendo as 3 primeiras skills em ordem alfabética. //
+6  cat skills2.txt | sort | head -3 > topskills.txt
+7  cat topskills.txt 
+
+//6. Crie um novo arquivo chamado phrases2.txt pelo terminal e adicione algumas frases de sua escolha.//
+8  cat > phrases2.txt
+
+//7. Conte o número de linhas que contêm as letras br .//
+9  grep br phrases2.txt | wc -l
+
+//8. Conte o número de linhas que não contêm as letras br .//
+10 grep -iv br phrases2.txt | wc -l
+ 
+//9. Adicione dois nomes de países ao final do arquivo phrases2.txt .//
+11 cat >> phrases2.txt
+
+//10. Crie um novo arquivo chamado bunch_of_things.txt com os conteúdos dos arquivos phrases2.txt e countries.txt //
+12 cat phrases2.txt countries.txt > bunch_of_things.txt
+13 less bunch_of_things.txt 
+
+//11. Ordene o arquivo bunch_of_things.txt .//
+14 sort < bunch_of_things.txt > bunch_of_things1.txt | mv bunch_of_things1.txt bunch_of_things.txt
+15 less bunch_of_things.txt
+
