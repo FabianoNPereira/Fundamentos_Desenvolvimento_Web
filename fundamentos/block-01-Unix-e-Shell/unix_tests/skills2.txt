@@ -1,0 +1,10 @@
+Internet
+Unix
+Bash
+JavaScript
+SQL
+HTML
+Front-end
+Back-end
+Comunicação
+Network
