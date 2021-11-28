@@ -1,7 +1,7 @@
 // exercicio 1:
 
 const a = 5;
-const b = 10;
+const b = 10
 const c = 15;
 
 let adicao = a + b;
@@ -104,3 +104,11 @@ let apenasNumeros = nota.replace(/\D/gim, '');  // https://pt.stackoverflow.com/
  } else {
      console.log("Nota F!");
  }
+
+//  Exercicio 8
+
+if (a %2 === 0 || b %2 === 0 || c %2 === 0) {
+    console.log("true");
+} else {
+    console.log("false");
+}
