@@ -1,6 +1,6 @@
 // exercicio 1:
 
-const a = 155;
+const a = 5;
 const b = 10;
 const c = 15;
 
@@ -56,3 +56,35 @@ if (a + b + c === 180) {
 } else {
     console.log("false");
 }
+
+// exercicio 6:
+
+let pecaXadrez = "tc";
+let pçMM = pecaXadrez.toLowerCase();
+
+switch(pçMM) {
+    case "peao":
+        console.log("1 casa à Frente, em seu primeiro movimento pode mover 2 casas à frente, elimina outro oponente à sua diagonal à frente.");
+        break;
+    case "torre":
+        console.log("Move-se para frente, trás ou lados, quantas casas quiser.")
+        break;
+    case "cavalo":
+        console.log("Move-se em 'L', usando 3 casas.");
+        break;
+    case "bispo":
+        console.log("Move-se na diagonal, quantas casas quiser.");
+        break;
+    case "rainha":
+        console.log("Move-se para qualquer direção, quantas casas quiser.");
+        break;
+    case "rei":
+        console.log("Move-se para qualquer direção, apenas 1 casa.");
+        break;
+    default:
+        console.log("Essa peça não existe, pelo menos não no idioma português.");
+        break;
+}
+
+        
+        
