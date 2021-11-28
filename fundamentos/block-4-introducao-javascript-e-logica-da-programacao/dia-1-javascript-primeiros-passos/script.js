@@ -2,6 +2,7 @@
 
 const a = 5;
 const b = 10;
+const c = 15;
 
 let adicao = a + b;
 console.log(adicao);
@@ -27,3 +28,26 @@ if (a > b) {
 } else {
     console.log("igual");
 }
+
+// exercicio 3:
+
+if (a > b && a > c) {
+    console.log(a);
+} else if (b > a && b > c) {
+    console.log(b);
+} else if (c > a && c > b) {
+    console.log(c);
+} else {
+    console.log("Igual");
+}
+
+//  exercicio 4:
+
+if (a <= 0) {
+    console.log("negative");
+} else {
+    console.log("positive");
+}
+
+//  exercicio 5:
+
