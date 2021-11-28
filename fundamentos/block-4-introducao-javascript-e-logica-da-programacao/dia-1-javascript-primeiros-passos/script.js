@@ -1,3 +1,5 @@
+// exercicio 1:
+
 const a = 5;
 const b = 10;
 
@@ -16,3 +18,12 @@ console.log(divisao);
 let modulo = a % b;
 console.log(modulo);
 
+// exercicio 2:
+
+if (a > b) {
+    console.log(a);
+} else if (a < b){
+    console.log(b);
+} else {
+    console.log("igual");
+}
