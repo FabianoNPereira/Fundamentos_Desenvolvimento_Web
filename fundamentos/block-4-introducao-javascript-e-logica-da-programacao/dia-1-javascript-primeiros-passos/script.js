@@ -86,5 +86,21 @@ switch(pçMM) {
         break;
 }
 
-        
-        
+// exercicio 7
+
+let nota = "49%";
+let apenasNumeros = nota.replace(/\D/gim, '');  // https://pt.stackoverflow.com/questions/3719/como-obter-apenas-os-n%C3%BAmeros-de-uma-string-em-javascript //
+
+ if (apenasNumeros >= 90) {
+     console.log("Nota A!");
+ } else if (apenasNumeros >= 80) {
+     console.log("Nota B!");
+ } else if (apenasNumeros >= 70) {
+    console.log("Nota C!");
+ } else if (apenasNumeros >= 60) {
+    console.log("Nota D!");
+ } else if (apenasNumeros >= 50) {
+     console.log("Nota E!");
+ } else {
+     console.log("Nota F!");
+ }
