@@ -1,6 +1,6 @@
 // exercicio 1:
 
-const a = 5;
+const a = 155;
 const b = 10;
 const c = 15;
 
@@ -51,3 +51,8 @@ if (a <= 0) {
 
 //  exercicio 5:
 
+if (a + b + c === 180) {
+    console.log("true");
+} else {
+    console.log("false");
+}
