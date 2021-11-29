@@ -112,3 +112,22 @@ if (a %2 === 0 || b %2 === 0 || c %2 === 0) {
 } else {
     console.log("false");
 }
+
+// Exercicio 9 igual o 8 erro.
+
+// Exercicio 10
+
+const custo = -1;
+const vv = 25;
+const imposto = 20;
+const custoImposto = (custo * imposto) / 100 + custo;
+
+let qtdVendida = 1000
+
+let lucro = ((vv - custoImposto) * qtdVendida);
+
+if (custo >= 0 && vv >= 0) {
+console.log("R$",lucro);
+} else {
+    console.log("Erro!!! O programa será encerado!");
+}
