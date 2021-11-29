@@ -131,3 +131,47 @@ console.log("R$",lucro);
 } else {
     console.log("Erro!!! O programa será encerado!");
 }
+
+// Exercicio 11
+
+const salBruto = 5400.82;
+let salBase = null;
+let salLiquido = null;
+
+// Aliquotas INSS
+const inss8 = 0.08;
+const inss9 = 0.09;
+const inss11 = 0.11;
+const inssMax = 570.88;
+
+// Aliquotas IR
+const ir75 = 0.075;
+const ir15 = 0.15;
+const ir225 = 0.225;
+const ir275 = 0.275;
+
+// calculo INSS
+if (salBruto <= 1556.94) {
+    salBase = salBruto - (inss8 * salBruto);
+} else if (salBruto <= 2594.92) {
+    salBase = salBruto - (inss9 * salBruto);
+} else if (salBruto <= 5198.82) {
+    salBase = salBruto - (inss11 * salBruto);
+} else {
+    salBase = salBruto - inssMax;
+}
+console.log("Salário base R$",salBase);
+
+// calculo do IR
+if (salBase <= 1903.98) {
+    salLiquido = salBase;
+} else if (salBase <= 2826.65) {
+    salLiquido = salBase - ((salBase * ir75) - 142.80);
+} else if (salBase <= 3751.05) {
+    salLiquido = salBase - ((salBase * ir15) - 354.80);
+} else if (salBase <= 4664.68) {
+    salLiquido = salBase - ((salBase * ir225) - 636.13);
+} else {
+    salLiquido = salBase - ((salBase * ir275) - 869.36);
+} 
+console.log("Salário líquido R$",salLiquido);
