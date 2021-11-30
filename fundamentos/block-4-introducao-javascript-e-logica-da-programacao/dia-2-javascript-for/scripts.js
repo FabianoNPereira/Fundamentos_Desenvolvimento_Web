@@ -22,3 +22,10 @@ if (media > 20) {
 } else {
     console.log("valor menor ou igual a 20");
 }
+
+// Exercicio 5:
+
+for (let number of numbers) {
+    numbers.sort();
+}
+console.log('Maior valor dentro do array: ',numbers[0]);
