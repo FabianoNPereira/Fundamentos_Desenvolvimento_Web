@@ -25,9 +25,9 @@ if (media > 20) {
 
 // Exercicio 5:
 for (let number of numbers) {
-    numbers.sort();
+    numbers.sort((a, b) => a - b);
 }
-console.log('Maior valor dentro do array: ',numbers[0]);
+console.log('Maior valor dentro do array: ',numbers[numbers.length -1]);
 
 // Exercicio 6:
 let impar = [];
@@ -41,3 +41,9 @@ if (impar.length > 0) {
     } else {
         console.log('nenhum valor ímpar encontrado!');
     }
+
+    // Exercicio 7:
+    for (let number of numbers) {
+        numbers.sort((a, b) => a - b);
+    }
+    console.log('Menor valor dentro do array:', numbers[0]);
