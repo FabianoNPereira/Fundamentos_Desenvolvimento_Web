@@ -7,8 +7,11 @@ for (let number of numbers) {
 }
 
 // Exercicio 2:
-
 for (let i = 0; i < numbers.length; i++) {
     soma += numbers[i];
 }
-console.log('Exercicio 2, soma', soma);
+console.log('Exercicio 2, soma:', soma);
+
+// Exercicio 3:
+let media = soma / numbers.length;
+console.log('Exercicio 3, Média Aritmética:', media);
