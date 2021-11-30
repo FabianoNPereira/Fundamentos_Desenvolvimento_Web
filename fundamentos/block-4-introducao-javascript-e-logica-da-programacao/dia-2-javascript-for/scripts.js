@@ -24,8 +24,20 @@ if (media > 20) {
 }
 
 // Exercicio 5:
-
 for (let number of numbers) {
     numbers.sort();
 }
 console.log('Maior valor dentro do array: ',numbers[0]);
+
+// Exercicio 6:
+let impar = [];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+        impar.push(numbers[i]);
+    }
+}
+if (impar.length > 0) {
+        console.log('Números impares:', impar);
+    } else {
+        console.log('nenhum valor ímpar encontrado!');
+    }
